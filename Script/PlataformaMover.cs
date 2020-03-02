@@ -16,13 +16,8 @@ public class PlataformaMover : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-
-
         x = transform.position.x;
         y = transform.position.y;
-
-
     }
 
     // Update is called once per frame

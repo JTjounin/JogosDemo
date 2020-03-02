@@ -6,19 +6,17 @@ public class StartCloud : MonoBehaviour {
 
 	public GameObject Nuvem;
 	public float callCloud;
+	public float repeatingCloud;
 
 	// Use this for initialization
 	void Start () {
-		
+		InvokeRepeating("CloudPassing", callCloud,repeatingCloud);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if(Nuvem.gameObject.transform.position.x < callCloud)
-		{
-			CloudPassing();
-		}
+		
 
 	}
 

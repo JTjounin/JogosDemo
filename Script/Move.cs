@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cloud : MonoBehaviour {
+public class Move : MonoBehaviour {
 
     public float speed;
     public float x;
     public float y;
-    public bool onCloud;
+    public bool on;
 
     // Use this for initialization
     void Start()
     {
+        on = true;
         x = transform.position.x;
         y = transform.position.y;
     }
@@ -25,7 +26,7 @@ public class Cloud : MonoBehaviour {
 
     void eixoX() // muda a direção da plataforma em relação ao eixo
     {            
-        if (onCloud)
+        if (on)
         {
             x += -speed * Time.deltaTime;
 
